@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <conio.h>
 
-int main(){
+int main() {
 
     int dia, mes;
     char tentar;
 
-    do{
+    do {
 
         printf("\n\n\n\n\t\t\tDescubra o seu Signo do Zod\xA1\aaco");
 
