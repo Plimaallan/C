@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
+#include <ctype.h>
 
 int main() {
 
@@ -9,7 +10,7 @@ int main() {
 
     do {
 
-        printf("\n\n\n\n\t\t\tDescubra o seu Signo do Zod\xA1\aaco");
+        printf("\n\n\n\n\t\t\tDescubra o seu Signo do Zod\xA1i\baco");
 
         printf("\n\n\n\t\t\tInforme seu dia de nascimento: ");
         scanf("%d", &dia);
@@ -61,14 +62,16 @@ int main() {
 
         }
 
-        printf("\n\n\t\tAperte 'S' e descobra novamente ou outra tecla para sair \n");
-        tentar = getch();
+        printf("\n\n\t\tPressione qualquer tecla para continuar ou 'S' para sair");
+        tentar = toupper(getch());
 
-        if (tentar == 'S' || tentar == 's') {
+        if (tentar != 'S') {
             system("cls");
         }
 
-    } while (tentar == 'S' || tentar == 's');
+    } while (tentar != 'S');
+
+    printf("\n");
 
     return 0;
 
