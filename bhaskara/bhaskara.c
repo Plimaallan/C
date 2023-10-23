@@ -4,6 +4,20 @@
 #include <conio.h>
 #include <ctype.h>
 
+/*
+ * Autor: Allan Lima
+ * Data : 23/10/2023
+ * A fórmula de Bhaskara é um método resolutivo para equações do segundo grau 
+ * cujo nome homenageia o grande matemático indiano que a demonstrou. 
+ * Essa fórmula nada mais é do que um método para encontrar as raízes reais de 
+ * uma equação do segundo grau fazendo uso apenas de seus coeficientes.
+ * 
+ * Fórmula de bhaskara
+ * x = -b ± √b² - 4.a.c
+ * --------------------
+ *        2.a
+ */
+
 int main() {
 
   char valorABC[3] = {'A', 'B', 'C'}, tentar;
@@ -11,7 +25,7 @@ int main() {
 
   do {
 
-printf("\n BHASKARA\n\n");
+  printf("\n BHASKARA\n\n");
 
 for (int i = 0; i < 3; i++) {
 
