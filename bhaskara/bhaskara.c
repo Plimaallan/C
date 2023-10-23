@@ -6,56 +6,56 @@
 
 int main() {
 
-	char valorABC[3] = {'A', 'B', 'C'}, tentar;
-	double raiz1, raiz2, delta, valorRaiz[3] = {0};
+  char valorABC[3] = {'A', 'B', 'C'}, tentar;
+  double raiz1, raiz2, delta, valorRaiz[3] = {0};
 
-    do{
-        
-        printf("\n BHASKARA\n\n");
+  do {
 
-        for (int i = 0; i < 3; i++) {
+printf("\n BHASKARA\n\n");
 
-            printf(" Digite o valor de %c: ", valorABC[i]);
+for (int i = 0; i < 3; i++) {
 
-            if (scanf("%lf", &valorRaiz[i]) != 1) {
-                printf(" Valor de %c \x82 inv\xa0lido!", valorABC[i]);
-                return 1;
-            }
+printf(" Digite o valor de %c: ", valorABC[i]);
 
-        }
-        
-        if (valorRaiz[0] != 0) {
+if (scanf("%lf", &valorRaiz[i]) != 1) {
+printf(" Valor de %c \x82 inv\xa0lido!", valorABC[i]);
+return 1;
+}
 
-            delta = pow(valorRaiz[1], 2) - (4 * valorRaiz[0] * valorRaiz[2]);
+}
 
-            if (delta < 0) {
-                printf(" N\xc6o tem ra\xA1zes reais \n");
-            } else if (delta == 0) {
-                raiz1 = (-valorRaiz[1]) / pow(valorRaiz[0], 2);
-                printf(" Possui apenas uma raiz real %.2lf \n", raiz1);
-            } else {
-                raiz1 = (-valorRaiz[1] + sqrt(delta)) / pow(2, valorRaiz[0]);
-                raiz2 = (-valorRaiz[1] - sqrt(delta)) / pow(2, valorRaiz[0]);
-                printf(" Delta : %.0lf \n", delta);
-                printf(" Raiz 1: %.2lf \n", raiz1);
-                printf(" Raiz 2: %.2lf \n", raiz2);
-            }
+if (valorRaiz[0] != 0) {
 
-        } else {
-            printf(" N\xc6o \x82 uma equa\x87\xc6o do segundo grau \n");
-        }
+delta = pow(valorRaiz[1], 2) - (4 * valorRaiz[0] * valorRaiz[2]);
 
-        printf("\n\t\tPressione qualquer tecla para continuar ou 'S' para sair ");
-        tentar = toupper(getch());
+if (delta < 0) {
+printf(" N\xc6o tem ra\xA1zes reais \n");
+} else if (delta == 0) {
+raiz1 = (-valorRaiz[1]) / pow(valorRaiz[0], 2);
+printf(" Possui apenas uma raiz real %.2lf \n", raiz1);
+} else {
+raiz1 = (-valorRaiz[1] + sqrt(delta)) / pow(2, valorRaiz[0]);
+raiz2 = (-valorRaiz[1] - sqrt(delta)) / pow(2, valorRaiz[0]);
+printf(" Delta : %.0lf \n", delta);
+printf(" Raiz 1: %.2lf \n", raiz1);
+printf(" Raiz 2: %.2lf \n", raiz2);
+}
 
-        if (tentar != 'S') {
-            system("cls");
-        }
+} else {
+printf(" N\xc6o \x82 uma equa\x87\xc6o do segundo grau \n");
+}
 
-    } while (tentar != 'S');
-    
-    printf("\n");
+printf("\n\t\tPressione qualquer tecla para continuar ou 'S' para sair ");
+tentar = toupper(getch());
 
-    return 0; 
-    
+if (tentar != 'S') {
+system("cls");
+}
+
+} while (tentar != 'S');
+
+printf("\n");
+
+return 0; 
+
 }

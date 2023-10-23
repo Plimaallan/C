@@ -4,22 +4,17 @@
 #include <ctype.h>
 
 int main() {
-
     int dia, mes;
     char tentar;
 
     do {
-
         printf("\n\n\n\n\t\t\tDescubra o seu Signo do Zod\xA1i\baco");
-
         printf("\n\n\n\t\t\tInforme seu dia de nascimento: ");
         scanf("%d", &dia);
-
         printf("\n\t\t\tInforme seu m\x88s de nascimento: ");
         scanf("%d", &mes);
 
         switch (mes) {
-
             case 12:
                 printf("\n\t\t\tSeu signo \x82: %s", (dia >= 22) ? "Capric\xa2rnio" : "Sagit\xa0rio");
                 break;
@@ -36,10 +31,10 @@ int main() {
                 printf("\n\t\t\tSeu signo \x82: %s",  (dia >= 23) ? "Virgem" : "Le\xc6o");
                 break;
             case 7:
-                printf("\n\t\t\tSeu signo \x82: %s",  (dia >= 23) ? "Le\xc6o" : "Câncer");
+                printf("\n\t\t\tSeu signo \x82: %s",  (dia >= 23) ? "Le\xc6o" : "C\xE2ncer");
                 break;
             case 6:
-                printf("\n\t\t\tSeu signo \x82: %s",  (dia >= 22) ? "Câncer" : "G\x88meos");
+                printf("\n\t\t\tSeu signo \x82: %s",  (dia >= 22) ? "C\xE2ncer" : "G\x88meos");
                 break;
             case 5:
                 printf("\n\t\t\tSeu signo \x82: %s",  (dia >= 22) ? "G\x88meos" : "Tauro");
@@ -59,7 +54,6 @@ int main() {
             default:
                 printf("\n\t\t\t\tValor inv\xa0lido!!!");
                 break;
-
         }
 
         printf("\n\n\t\tPressione qualquer tecla para continuar ou 'S' para sair");
@@ -70,9 +64,6 @@ int main() {
         }
 
     } while (tentar != 'S');
-
     printf("\n");
-
     return 0;
-
 }
