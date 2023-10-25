@@ -11,3 +11,4 @@ Ambas as linguagens são amplamente utilizadas e têm feito contribuições sign
 No entanto, elas têm diferenças distintas em termos de funcionalidade, recursos e aplicação. 
 Exploraremos as diferenças entre C e C++, ajudando você na escolha da linguagem certa para 
 suas necessidades de programação e projeto.
+C++ é uma versão aprimorada do C que tem suporte a orientação a objetos aumentando a velocidade e a produtividade do desenvolvedor.
