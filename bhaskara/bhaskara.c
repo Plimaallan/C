@@ -44,12 +44,10 @@ int main() {
 
       if (delta < 0) {
         printf(" N\xc6o tem ra\xA1zes reais \n");
-      }
-      else if (delta == 0) {
+      } else if (delta == 0) {
         raiz1 = (-valorRaiz[1]) / pow(valorRaiz[0], 2);
         printf(" Possui apenas uma raiz real %.2lf \n", raiz1);
-      } 
-      else {
+      } else {
         raiz1 = (-valorRaiz[1] + sqrt(delta)) / pow(2, valorRaiz[0]);
         raiz2 = (-valorRaiz[1] - sqrt(delta)) / pow(2, valorRaiz[0]);
         printf(" Delta : %.0lf \n", delta);
@@ -57,8 +55,7 @@ int main() {
         printf(" Raiz 2: %.2lf \n", raiz2);
       }
 
-    } 
-    else {
+    } else {
       printf(" N\xc6o \x82 uma equa\x87\xc6o do segundo grau \n");
     }
 
