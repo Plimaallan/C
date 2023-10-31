@@ -31,3 +31,8 @@ C++ é uma versão aprimorada do C que tem suporte a orientação a objetos aume
 | 11 | Sobrecarga de função e operador.          | C não suporta sobrecarga de função e operador diretamente.                                        | O C++ suporta sobrecarga de função e operador.                                                     |
 | 12 | Variável por referência                   | Não há suporte para variáveis de refração.                                                        | O C++ oferece suporte à variável de refrência.                                                     |
 | 13 | Uso por                                   | Kernel do Microsoft Windows, Telegram Messenger, Banco de Dados Oracle, MySQL, etc.               | Google Chrome, Microsoft Office, motor de jogo Torque 3-D, e muito mais.                           |
+
+## 1 -  Design Orientado a Objetos
+
+- C++ tem suporte para classe, objeto, herança, abstração, etc como resultado a reutilização de código, ocultação de dados e gerenciamento de memória é possível.
+- C não tem recursos de OOP, os dados estão abertos em todos os lugares e se movem livremente pelas funções.
