@@ -20,7 +20,7 @@ int main() {
       // Soma recebe soma + valor da matriz
       soma = soma + lista[linha][coluna];
 
-      // Imprime a posicao do index da matriz e o valor
+      // Imprime a posicao do index da matriz, valor do index e soma acumulada
       printf("L%dC%d: %d <>>> %d --- ", linha, coluna, lista[linha][coluna], soma);
 
     } // Fim for coluna
