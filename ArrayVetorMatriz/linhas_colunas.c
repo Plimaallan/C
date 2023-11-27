@@ -2,17 +2,26 @@
 #include <stdlib.h>
 
 int main() {
-  int mat_Valores[3][2];
-  mat_Valores[0][0] = 5;
-  mat_Valores[1][0] = 10;
-  mat_Valores[2][0] = 15;
-  mat_Valores[0][1] = 50;
-  mat_Valores[1][1] = 100;
-  mat_Valores[2][1] = 150;
+
+  // Matriz lista de valores
+  int lista[3][3] = {{5, 10, 15}, {30, 60, 90}, {120, 150, 180}};
+
+  // Percorrer valores das linhas da matrix
   for (int linha = 0; linha < 3; linha++) {
-    for (int coluna = 0; coluna < 2; coluna++) {
-      printf("%d\t", mat_Valores[linha][coluna]);
-    }
+
+    // Percorrer valores das colunas da matrix
+    for (int coluna = 0; coluna < 3; coluna++) {
+
+      // Imprimir os valores das colunas
+      printf("%d\t", lista[linha][coluna]);
+
+    } // Fim for coluna
+
+    // Quebrar a linha
     printf("\n");
-  }
+
+  } // Fim for linha
+
+  return 0;
+
 }
