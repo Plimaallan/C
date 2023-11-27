@@ -4,12 +4,14 @@
 int main() {
 
   // Matriz lista de valores
-  int lista[3][3] = {{5, 10, 15}, {30, 60, 90}, {120, 150, 180}};
+  int lista[3][3] = {{5, 10, 15},
+                     {30, 60, 90},
+                     {120, 150, 180}};
 
-  // Percorrer valores das linhas da matrix
+  // Percorrer valores das linhas da matriz
   for (int linha = 0; linha < 3; linha++) {
 
-    // Percorrer valores das colunas da matrix
+    // Percorrer valores das colunas da matriz
     for (int coluna = 0; coluna < 3; coluna++) {
 
       // Imprimir os valores das colunas

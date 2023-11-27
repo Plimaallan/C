@@ -11,10 +11,10 @@ int main() {
   // Iniciar variaveis 'maior_valor', 'valor_retido' e 'valor_index'
   int maior_valor, valor_retido, valor_index = 0;
 
-  // Percorrer valores das linhas da matrix
+  // Percorrer valores das linhas da matriz
   for (int linha = 0; linha < 3; linha++) {
 
-    // Percorrer valores das coluna da matrix
+    // Percorrer valores das coluna da matriz
     for (int coluna = 0; coluna < 3; coluna++) {
       valor_index = lista[linha][coluna];
       valor_retido = maior_valor;
