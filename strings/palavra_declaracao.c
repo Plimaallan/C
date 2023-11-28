@@ -11,6 +11,10 @@ int main() {
   printf("Array palavra: %s\n", palavra);
   printf("Array nome: %s\n", nome);
 
+  // Caractere '\0'(null) indica o fim de uma string
+  palavra[3] = '\0';
+  printf("Array palavra: %s\n", palavra);
+
   return 0;
 
 }
