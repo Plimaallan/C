@@ -11,6 +11,9 @@ int main() {
   // junta 'nome' e 'sobrenome'
   strcat(nome, sobrenome);
 
+  // junta 'sobrenome' e os 5 primeiros caractere de 'nome'
+  strncat(sobrenome, nome, 5);
+
   // Imprime os valores de 'nome' e 'sobrenome'
   printf("Nome: '%s'\nSobrenome: '%s'\n", nome, sobrenome);
 
