@@ -4,34 +4,28 @@
 
 int main() {
 
-  int p = 0;
-  int i = 0;
-
-  int primos[50] = {0};
+  int primo_valor = 0;
+  int primos[50] = {[0] = 2, [1] = 3};
   int primo_indexes = 2;
-
   bool e_primo = false;
 
-  primos[0] = 2;
-  primos[1] = 3;
-
-  for (p = 5; p <= 100; p = p + 2) {
+  for (primo_valor = 5; primo_valor <= 100; primo_valor = primo_valor + 2) {
     e_primo = true;
 
-    for (i = 1; e_primo && p / primos[i] >= primos[i]; ++i) {
-      if (p % primos[i] == 0) {
+    for (int i = 1; e_primo && primo_valor / primos[i] >= primos[i]; ++i) {
+      if (primo_valor % primos[i] == 0) {
         e_primo = false;
       }
     }
 
     if (e_primo == true) {
-      primos[primo_indexes] = p;
+      primos[primo_indexes] = primo_valor;
       ++primo_indexes;
     }
 
   }
 
-  for (i = 0; i < primo_indexes; ++i) {
+  for (int i = 0; i < primo_indexes; ++i) {
     printf("%i  ", primos[i]);
   }
 
