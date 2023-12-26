@@ -5,7 +5,7 @@
 int somar_dois_numeros(int x, int y) {
 
   int resultado = x * y;
-  printf("O produto de %d multriplicado por %d é: %d \n", x, y, resultado);
+  printf("O produto de %d multiplicado por %d é: %d \n", x, y, resultado);
 
   return 0;
 
