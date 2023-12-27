@@ -3,15 +3,15 @@
 
 int main() {
 
-  // Iniciar variaveis 'soma', 'valor_retido' e 'valor_index'
-  int soma, valorNatural = 0;
+  // Iniciar variaveis 'soma' e 'valorNatural'
+  int soma, valor_natural = 0;
 
-  //
-  printf("Informe o valor natural:  ");
-  scanf("%d", &valorNatural);
+  // Recebe o valor natural
+  printf("Informe o valor natural: ");
+  scanf("%d", &valor_natural);
 
-  soma += i;
-  printf("O valor de i: %d - Soma de i: %d \n", i, soma);
+  soma += valor_natural;
+  printf("O valor natural é: %d - Soma do valor natural é: %d \n", valor_natural, soma);
 
   return 0;
 
