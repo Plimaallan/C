@@ -3,10 +3,10 @@
 
 int main() {
 
-  // Iniciar variaveis 'soma' e 'valorNatural'
+  // Iniciar variaveis 'soma' e 'valor_natural'
   int soma, valor_natural = 0;
 
-  // Recebe o valor natural
+  // Recebe o valor naturalr
   printf("Informe o valor natural: ");
   scanf("%d", &valor_natural);
 
