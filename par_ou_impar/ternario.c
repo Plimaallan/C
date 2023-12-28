@@ -8,8 +8,8 @@ int main() {
   scanf("%d", &numeroInformado);
 
   // Verifica se o número é divisível por 2
-  (numeroInformado % 2 == 0) ? printf("O numero informado e par") :
-                               printf("O numero informado e impar");
+  (numeroInformado % 2 == 0) ? printf("O numero informado %d é par", numeroInformado) :
+                               printf("O numero informado %d é impar", numeroInformado);
 
   return 0;
 
