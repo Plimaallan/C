@@ -10,7 +10,8 @@ int main() {
   // Verifica se o número é divisível por 2
   if (numeroInformado % 2 == 0) {
     printf("O numero informado %d é par", numeroInformado);
-  } else {
+  }
+  else {
     printf("O numero informado %d é impar", numeroInformado);
   }
 
